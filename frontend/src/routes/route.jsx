@@ -11,6 +11,12 @@ import AppointmentBooking from '../pages/appointment/AppointmentBooking';
 import SignupPage from '../pages/signup/SignUpPage';
 import Appointment from '../pages/appointment/Appointment';
 import DoctorDashboard from '../pages/doctors/DoctorDashboard';
+import Parkinson from '../pages/prediction/parkinson';
+import Heart from '../pages/prediction/Heart';
+import Diabetes from '../pages/prediction/Diabetes';
+import BreastCancer from '../pages/prediction/BreastCancer';
+import CaloriePrediction from '../pages/prediction/Calories';
+import InsurancePricePrediction from '../pages/prediction/insurance';
 
 
 
@@ -59,6 +65,30 @@ const router = createBrowserRouter([
       {
         path:'doctor/:doctorId',
         element:<DoctorDashboard/>  
+      },
+      {
+        path:'/parkinson',
+        element:<Parkinson/>  
+      },
+      {
+        path:'/heart',
+        element:<Heart/>  
+      },
+      {
+        path:'/diabetes',
+        element:<Diabetes/>  
+      },
+      {
+        path:'/bcancer',
+        element:<BreastCancer/>  
+      },
+      {
+        path:'/calories',
+        element:<CaloriePrediction/>  
+      },
+      {
+        path:'/price',
+        element:<InsurancePricePrediction/>  
       }
     ]
   }
